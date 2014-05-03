@@ -12,7 +12,9 @@ Requirements:
 	1. Python 3.x
 	2. pytvdbapi
 
-To install pytvdbapi, use "pip install pytvdbapi" (might need administrator privileges)
+To install pytvdbapi, use:
+
+	"pip install pytvdbapi" (might need administrator privileges)
 
 Instructions:
 For Linux/Unix users:
