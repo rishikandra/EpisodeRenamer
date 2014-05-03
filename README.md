@@ -10,7 +10,6 @@ The script renames the file to the following format:
 Requirements:
 	
 	1. Python 3.x
-	
 	2. pytvdbapi
 
 To install pytvdbapi, use "pip install pytvdbapi" (might need administrator privileges)
@@ -19,19 +18,14 @@ Instructions:
 For Linux/Unix users:
 	
 	1. Open terminal and change directory to where the episode is located.
-	
 	2. Assuming your EpisodeRenamer.py file is in the home directory, Run: python ~/EpisodeRenamer.py File_name (make sure you get the file name and extension right).
-	
 	3. Et viola.
 
 For Windows users:
 	
 	1. Start menu -> run -> cmd
-	
 	2. Navigate to the folder where the episode is located.
-	
 	3. Assuming your EpisodeRenamer-win.py is in "C:\Python34", Run: python "C:\Python34\EpisodeRenamer-win.py" File_name (make sure you get the file name and extension right).
-	
 	4. Et viola.
 
 Please contact me at rishikandra11@gmail.com if you have any queries or suggestions.
