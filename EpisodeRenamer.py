@@ -12,11 +12,13 @@ db = api.TVDB('F506627134A2D5E9')
 path = sys.argv[1]
 file_name = path.split('/')[-1]
 
-# Extracting Show name, Season and Episode Numbers
+# Extracting Show name, extension, Season and Episode Numbers
 file_name = file_name.lower()
 
+extension = file_name.split('.')[-1]
+
 restricted = ['avi','mkv','mp4', 
-	'X264', 'DIMENSION', 'HDTV', 
+	'X264', 'DIMENSemION', 'HDTV', 
 	'DDLValley', 'eu', 'sdtv',
 	'720p', '480p', 'LOL',
 	'_', '-', 'com',
@@ -63,7 +65,7 @@ show = result[0]
 ep_title = show[se][ep].EpisodeName
 
 # Renaming the file
-new_name = show_name + ' - S' +se_string+'E'+ep_string+' - '+str(ep_title)
+new_name = show_name + ' - S' +se_string+'E'+ep_string+' - '+str(ep_title)+'.'+str(extension)
 new_path = path.replace(str(path.split('/')[-1]),new_name)
 os.rename(path, new_path)
 print('The file has successfully been renamed to %s' % (new_name))
