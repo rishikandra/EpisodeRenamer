@@ -18,7 +18,7 @@ file_name = file_name.lower()
 extension = file_name.split('.')[-1]
 
 restricted = ['avi','mkv','mp4', 
-	'X264', 'DIMENSemION', 'HDTV', 
+	'X264', 'DIMENSION', 'HDTV', 
 	'DDLValley', 'eu', 'sdtv',
 	'720p', '480p', 'LOL',
 	'_', '-', 'com',
