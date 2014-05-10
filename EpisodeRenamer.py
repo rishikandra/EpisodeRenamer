@@ -23,11 +23,11 @@ restricted = ['avi','mkv','mp4',
 	'720p', '480p', 'LOL',
 	'_', '-', 'com',
 	'xvid', 'ASAP', 'fqm',
-	'[', ']', 'vtv',
+	'[', ']', 'vtv', 'remarkable',
 	'afg', 'proper', 'repack',
 	'2hd', 'evolve', 'www',
 	'tuserie', 'real', '300mblinks',
-	'fever'
+	'fever', 'publicHD', 'mrs'
 	]
 
 restricted = [each.lower() for each in restricted]

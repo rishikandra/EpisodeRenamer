@@ -17,19 +17,18 @@ file_name = file_name.lower()
 
 extension = file_name.split('.')[-1]
 
-restricted = ['avi','mkv','mp4',
-	'_3','_4', 
+restricted = ['avi','mkv','mp4', 
 	'X264', 'DIMENSION', 'HDTV', 
 	'DDLValley', 'eu', 'sdtv',
 	'720p', '480p', 'LOL',
 	'_', '-', 'com',
 	'xvid', 'ASAP', 'fqm',
-	'[', ']', 'vtv',
+	'[', ']', 'vtv', 'remarkable',
 	'afg', 'proper', 'repack',
 	'2hd', 'evolve', 'www',
 	'tuserie', 'real', '300mblinks',
 	'fever', 'theextopia', 'net',
-	'killers', 'remarkable'
+	'killers','publicHD', 'mrs'
 	]
 
 restricted = [each.lower() for each in restricted]
