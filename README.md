@@ -27,7 +27,7 @@ For Windows users:
 	
 	1. Start menu -> run -> cmd
 	2. Navigate to the folder where the episode is located.
-	3. Assuming your EpisodeRenamer-win.py is in "C:\Python34", Run: python "C:\Python34\EpisodeRenamer-win.py" File_name (make sure you get the file name and extension right).
+	3. Assuming your EpisodeRenamer.py is in "C:\Python34", Run: python "C:\Python34\EpisodeRenamer-win.py" File_name (make sure you get the file name and extension right).
 	4. Et viola.
 
 Please contact me at rishikandra11@gmail.com if you have any queries or suggestions.
