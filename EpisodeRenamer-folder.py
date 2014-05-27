@@ -34,7 +34,7 @@ for each in fold:
 		'tuserie', 'real', '300mblinks',
 		'fever', 'theextopia', 
 		'killers','publicHD', 'mrs',
-		'com','net'
+		'com','net', 'patoghdl'
 		]
 
 	restricted = [each.lower() for each in restricted]

@@ -21,13 +21,15 @@ restricted = ['avi','mkv','mp4',
 	'X264', 'DIMENSION', 'HDTV', 
 	'DDLValley', 'eu', 'sdtv',
 	'720p', '480p', 'LOL',
-	'_', '-', 'com',
+	'_', '-', 'compulsion',
 	'xvid', 'ASAP', 'fqm',
 	'[', ']', 'vtv', 'remarkable',
 	'afg', 'proper', 'repack',
 	'2hd', 'evolve', 'www',
 	'tuserie', 'real', '300mblinks',
-	'fever', 'publicHD', 'mrs'
+	'fever', 'theextopia',
+	'killers', 'publicHD', 'mrs',
+	 'net', 'com', 'patoghdl'
 	]
 
 restricted = [each.lower() for each in restricted]
@@ -49,7 +51,7 @@ if se<10:
 
 episode = re.compile("e[0-9]+", flags=re.IGNORECASE)
 ep = episode.findall(show_name)[0]
-show_name = show_name.replace(ep, '')
+show_name = show_name.replace(ep)[0]
 ep_string = num.findall(ep)[0]
 ep = int(ep_string)
 if ep<10:
