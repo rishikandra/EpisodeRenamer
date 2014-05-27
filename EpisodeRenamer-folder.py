@@ -73,6 +73,9 @@ for each in fold:
 	ep_title = show[se][ep].EpisodeName
 	# Renaming the file
 	new_name = show_name + ' - S' +se_string+'E'+ep_string+' - '+str(ep_title)+'.'+str(extension)
-	new_path = path.replace(str(path.split('\\')[-1]),new_name)
+	if sys.platform == 'win32':
+		new_path = path.replace(str(path.split('\\')[-1]),new_name)
+	else:
+		new_path = path.replace(str(path.split('/')[-1]),new_name)
 	os.rename(path, new_path)
 	print('The file has successfully been renamed to %s' % (new_name))

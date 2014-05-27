@@ -10,7 +10,10 @@ db = api.TVDB('F506627134A2D5E9')
 
 # Save path and name of the file in two variables
 path = sys.argv[1]
-file_name = path.split('/')[-1]
+if sys.platform == 'win32':
+	file_name = path.split('\\')[-1]
+else:
+	file_name = path.split('/')[-1]
 
 # Extracting Show name, extension, Season and Episode Numbers
 file_name = file_name.lower()
@@ -51,7 +54,7 @@ if se<10:
 
 episode = re.compile("e[0-9]+", flags=re.IGNORECASE)
 ep = episode.findall(show_name)[0]
-show_name = show_name.replace(ep)[0]
+show_name = show_name.split(ep)[0]
 ep_string = num.findall(ep)[0]
 ep = int(ep_string)
 if ep<10:
