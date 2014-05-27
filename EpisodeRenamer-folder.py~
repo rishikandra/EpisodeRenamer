@@ -17,10 +17,7 @@ for each in fold:
 	# Connect to The TVDB api
 	db = api.TVDB('F506627134A2D5E9')
 	file_name = each
-	if sys.platform == 'win32':
-		path = folder + '\\'+ file_name
-	else:
-		path = folder + '/' + file_name
+	path = folder + '\\'+file_name
 	# Extracting Show name, Season and Episode Numbers
 	file_name = file_name.lower()
 	extension = file_name.split('.')[-1]
@@ -80,5 +77,5 @@ for each in fold:
 		new_path = path.replace(str(path.split('\\')[-1]),new_name)
 	else:
 		new_path = path.replace(str(path.split('/')[-1]),new_name)
-	os.rename(each, new_name)
+	os.rename(filename, new_name)
 	print('The file has successfully been renamed to %s' % (new_name))
